@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mi página personal</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<nav class="navbar">
+			<ul>
+				<li><a href="#about">Acerca de</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#contact">Contacto</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="about">
+			<h2 style="font-family: Times New Roman;">Acerca de</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lobortis malesuada fringilla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+			<img src="placeholder.jpg" alt="Imagen de muestra">
+		</section>
+		<section id="portfolio">
+			<h2>Portfolio</h2>
+			<div class="portfolio-container">
+				<article>
+					<img src="project1.jpg" alt="Proyecto 1">
+					<figcaption>Descripción del proyecto 1</figcaption>
+				</article>
+				<article>
+					<img src="project2.jpg" alt="Proyecto 2">
+					<figcaption>Descripción del proyecto 2</figcaption>
+				</article>
+				<article>
+					<img src="project3.jpg" alt="Proyecto 3">
+					<figcaption>Descripción del proyecto 3</figcaption>
+				</article>
+			</div>
+		</section>
+		<section id="contact">
+			<h2>Contacto</h2>
+			<form action="#" method="POST">
+				<label for="name">Nombre:</label>
+				<input type="text" id="name" name="name" minlength="3" pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]+" required>
+				<label for="age">Edad:</label>
+				<input type="number" id="age" name="age" min="18" max="99" required>
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+				<label for="message">Mensaje:</label>
+				<textarea id="message" name="message" maxlength="250" required></textarea>
+				<label for="privacy">Aceptación de la Política de Privacidad:</label>
+				<input type="checkbox" id="privacy" name="privacy" required>
+				<input type="submit" value="Enviar">
+			</form>
+		</section>
+	</main>
+	<footer style="background: linear-gradient(to right, #ff0000, #00ff00);">
+		<p>Alberto Moreno - html</p>
+	</footer>
+</body>
+</html>
